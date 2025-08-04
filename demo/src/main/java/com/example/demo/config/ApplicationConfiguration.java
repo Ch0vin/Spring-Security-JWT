@@ -1,5 +1,4 @@
 package com.example.demo.config;
-
 import com.example.demo.repository.UserRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -16,8 +15,7 @@ public class ApplicationConfiguration {
     private final UserRepository userRepository;
 
     public ApplicationConfiguration(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
+        this.userRepository = userRepository;}
 
     @Bean
     UserDetailsService userDetailsService(){
